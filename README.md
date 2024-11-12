@@ -1,2 +1,1 @@
 # Encriptador - challenge
-# Encriptador - challenge

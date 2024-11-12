@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,28 +13,36 @@
                 <img src="./asset/Vector.svg" alt="Logo de alura">
             </div>
             <div class="primera-seccion-container-contenido">
-                <textarea class="primera-seccion-textarea" id="" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea id="entrada" class="primera-seccion-textarea" id="" placeholder="Ingrese el texto aqui"></textarea>
                 <div class="primera-seccion-funciones">
                     <div class="primera-seccion-container-advertencia">
                         <img src="./asset/Group.svg" alt="">
                         <p class="primera-seccion-texto">Solo letras minúsculas y sin acentos</p>
                     </div>
                     <div class="container-botones">
-                        <button class="primera-seccion-boton btn-encriptar">Encriptar</button>
-                        <button class="primera-seccion-boton btn-desencriptar">Desencriptar</button>
+                        <button onclick="encriptar();" class="primera-seccion-boton btn-encriptar">Encriptar</button>
+                        <button onclick="desencriptar();" class="primera-seccion-boton btn-desencriptar">Desencriptar</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="segunda-seccion">
-            <div class="segunda-seccion-container-img">
-                <img src="./asset/Muñeco.svg" alt="" class="img-muneco">
+            <div class="post-ejecucion">
+                <textarea name="" id="salida" class="textarea-resultado">Hola aqui esta la encriptacion</textarea>
+                <button onclick="copiarTexto();" class="boton-copiar">Copiar</button>
             </div>
-            <div class="segunda-seccion-container-texto">
-                <p class="segunda-seccion-texto texto-uno">Ningún mensaje fue encontrado</p>
-                <p class="segunda-seccion-texto texto-dos">Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="pre-ejecucion">
+                <div class="segunda-seccion-container-img">
+                    <img src="./asset/Muñeco.svg" alt="" class="img-muneco">
+                </div>
+                <div class="segunda-seccion-container-texto">
+                    <p class="segunda-seccion-texto texto-uno">Ningún mensaje fue encontrado</p>
+                    <p class="segunda-seccion-texto texto-dos">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
             </div>
         </section>
-    </main>   
+    </main>
+    
+    <script src="./script.js"></script>
 </body>
 </html>
